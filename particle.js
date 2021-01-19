@@ -8,7 +8,7 @@ function Particle(x,y,r,g,b) {
   this.update = function() {
     this.pos.add(this.vel);
     this.vel.add(this.acc);
-    this.vel.mult(0.999)
+    this.vel.mult(0.995)
     if (this.vel.mag() < 0.5){
       this.vel.setMag(0.5);
     }
